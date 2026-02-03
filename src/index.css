@@ -1,68 +1,65 @@
+@import "tailwindcss";
+
+
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --primary-color: #A0A7F9;
+  --secondary-color: #3D4260;
 }
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+html, body {
+  height: 100%;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Urbanist', sans-serif;
+
+}
+
+/* body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.border {
+  border: 1px solid #DDE1E6; /* 1px width, solid style, your color */
+  border-radius: 9999px;      /* fully rounded corners */
+}
+
+/* Define text colors */
+.gray-100 { color: #121619; }
+.gray-90  { color: #21262A; }
+.gray-80  { color: #343A3F; }
+.gray-70  { color: #4D5358; }
+.gray-60  { color: #697077; }
+.gray-50  { color: #878E96; }
+.gray-40  { color: #A2A9B0; }
+.gray-30  { color: #C1C6CD; }
+.gray-20  { color: #DDE1E6; }
+.gray-10   { color: #FFFFFF; }
+
+/* Define border colors */
+.border-gray-100 { border-color: #121619; }
+.border-gray-90  { border-color: #21262A; }
+.border-gray-80  { border-color: #343A3F; }
+.border-gray-70  { border-color: #4D5358; }
+.border-gray-60  { border-color: #697077; }
+.border-gray-50  { border-color: #878E96; }
+.border-gray-40  { border-color: #A2A9B0; }
+.border-gray-30  { border-color: #C1C6CD; }
+.border-gray-20  { border-color: #DDE1E6; }
+.border-gray-0   { border-color: #FFFFFF; }
+
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.data-center {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  height: 100% !important; /* take full height of parent */
 }
