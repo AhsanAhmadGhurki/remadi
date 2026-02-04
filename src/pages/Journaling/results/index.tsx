@@ -67,7 +67,7 @@ const Results = () => {
           Next{" "}
         </Button>
         <Button
-          onClick={() => navigate("/Journaling/scale")}
+          onClick={() => navigate("/Journaling/results")}
           className="w-full !h-full border !bg-[#3D4260] !text-white !py-4 !text-lg font-semibold"
         >
           Next{" "}

@@ -15,6 +15,11 @@ import Financial from "./pages/Journaling/financial";
 import Looking from "./pages/Journaling/looking";
 import Scale from "./pages/Journaling/scale";
 import Results from "./pages/Journaling/results";
+import Dashboard from "./pages/dashboard/dashboard";
+import PreviousSession from "./pages/dashboard/previous-session";
+import Remadies from "./pages/dashboard/remadies";
+import Profile from "./pages/dashboard/profile";
+import DashboardLayout from "./pages/dashboard/layout";
 // import Job from "./pages/Journaling/job";
 
 const router = createBrowserRouter([
@@ -45,9 +50,20 @@ const router = createBrowserRouter([
       { path: "looking", element: <Looking /> },
       { path: "scale", element: <Scale /> },
       { path: "results", element: <Results /> },
-      // { path: "alldone", element: <AllDone /> },
+      { path: "bothering", element: <Bothering /> },
     ],
-  }, 
+  },
+  {
+    path: "/Dashboard",
+    element: <DashboardLayout />,
+    children: [
+      { index: true, element: <Dashboard /> },
+      { path: "previous-session", element: <PreviousSession /> },
+      { path: "remadies", element: <Remadies /> },
+      { path: "profile", element: <Profile /> },
+      // { path: "financial", element: <Financial /> },
+    ],
+  },
 ]);
 
 export default function App() {

@@ -12,7 +12,7 @@ export default function AuthHeader() {
       {/* Left: Logo */}
       <Link to="/">
         <img
-          src="/public/images/Logo.svg"
+          src="/images/Logo.svg"
           alt="logo"
           className="w-auto h-auto"
         />

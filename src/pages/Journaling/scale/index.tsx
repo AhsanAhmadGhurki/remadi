@@ -6,7 +6,7 @@ import SingleSelect from "../../../component/SingleSelect"; // assume same folde
 
 const Scale = () => {
   const navigate = useNavigate();
-  const options = ["Yes", "No", "Other"];
+  const options = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
   const [selected, setSelected] = useState("");
 
   return (
@@ -19,17 +19,18 @@ const Scale = () => {
         </h1>
       </div>
 
-      <div className="w-170">
+      <div className="w-200 flex justify-center">
         <SingleSelect
           options={options}
           value={selected}
           onChange={setSelected}
+          layout="row"
         />
       </div>
 
       <div className="w-100 h-[56px]">
         <Button
-          onClick={() => navigate("/Journaling/Results")}
+          onClick={() => navigate("/Journaling/results")}
           className="w-full !h-full border !bg-black !text-white !py-4 !text-lg font-semibold"
         >
           Next{" "}

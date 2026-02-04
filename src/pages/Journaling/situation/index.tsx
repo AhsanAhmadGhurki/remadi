@@ -34,7 +34,7 @@ const Situation = () => {
 
       <div className="w-100 h-[56px]">
         <Button
-          onClick={() => navigate("/Journaling/Job")}
+          onClick={() => navigate("/Journaling/bothering")}
           className="w-full !h-full border !bg-black !text-white !py-4 !text-lg font-semibold"
         >
           Next{" "}

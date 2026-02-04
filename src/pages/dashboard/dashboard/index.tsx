@@ -39,7 +39,7 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-        {/* <div className="flex gap-6">
+        <div className="flex gap-6">
           <div className="flex justify-between bg-[#93FFF4] w-[70%] rounded-4xl p-6">
             <div className="flex flex-col justify-start gap-2">
               <h1 className="text-2xl font-bold gray-100">
@@ -86,52 +86,7 @@ const Dashboard = () => {
               </Button>
             </div>
           </div>
-        </div> */}
-        <div className="flex gap-6">
-  {/* Left Card */}
-  <div className="flex-[7] flex justify-between items-start bg-[#93FFF4] rounded-4xl p-6">
-    <div className="flex flex-col gap-2">
-      <h1 className="text-2xl font-bold text-gray-100">
-        Your wellness counselor.
-      </h1>
-      <p className="text-[#1F160F] font-medium">
-        REMaDI your issues. Track progress and explore resources and insights
-        to improve your mental health and wellness.
-      </p>
-      <Button
-        onClick={() => navigate("/")}
-        className="w-full h-14 border !bg-black !text-white text-lg font-semibold"
-      >
-        Next
-      </Button>
-    </div>
-    <div className="h-[142px] w-auto">
-      <img
-        src="/public/images/Session.svg"
-        alt=""
-        className="h-full w-auto object-contain"
-      />
-    </div>
-  </div>
-
-  {/* Right Card */}
-  <div className="flex-[3] flex flex-col bg-[#EDEBFF] rounded-4xl text-center p-6 gap-2">
-    <h1 className="text-2xl font-bold text-gray-100">
-      Your wellness counselor.
-    </h1>
-    <p className="text-[#1F160F] font-medium">
-      REMaDI your issues. Track progress and explore resources and insights
-      to improve your mental health and wellness.
-    </p>
-    <Button
-      onClick={() => navigate("/")}
-      className="w-full h-14 border !bg-black !text-white text-lg font-semibold"
-    >
-      Next
-    </Button>
-  </div>
-</div>
-
+        </div>
       </div>
     </div>
   );
