@@ -4,10 +4,15 @@ import Sidebar from "./sidebar/sidebar";
 
 export default function DashboardLayout() {
   return (
-    <div className="flex  min-h-screen">
-      <Sidebar /> {/* Header har child page ke upar */}
-      <main className="flex flex-1 w-full min-h-screen bg-[#FDFDFF]">
-        <Outlet /> {/* Login / Signup / Gender / Age / AllDone */}
+    <div className="flex min-h-screen">
+      {/* Sidebar ko full height aur fixed position */}
+      <div className="sticky top-0 h-screen">
+        <Sidebar />
+      </div>
+
+      {/* Main content scrollable */}
+      <main className="flex-1 w-full min-h-screen overflow-y-auto bg-[#FDFDFF]">
+        <Outlet />
       </main>
     </div>
   );

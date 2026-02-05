@@ -5,11 +5,11 @@ import { Link, NavLink } from "react-router-dom";
 const Sidebar = () => {
   return (
     <div className="relative hidden lg:block w-[300px] min-h-screen overflow-hidden">
-      <div className="absolute top-50 left-12 inset-0 flex justify-center">
+      <div className="absolute top-50 left-12 inset-0 flex justify-center z-[-1]">
         <div className="w-[120%] h-[800px] bg-gradient-to-b from-[#A0A7F9] via-[#ACF9A0] to-[#F1FF9E] rounded-[50%_/_40%] blur-3xl opacity-20" />
       </div>
 
-      <div className="flex flex-col justify-between h-full">
+      <div className="flex flex-col justify-between h-screen ">
         <div className="flex flex-col">
           {/* Logo */}
           <div className="flex justify-center w-full w-[212px] h-auto my-6">
