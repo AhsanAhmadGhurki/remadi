@@ -61,16 +61,16 @@ const Results = () => {
 
       <div className="flex gap-10 w-full h-[56px]">
         <Button
-          onClick={() => navigate("/Journaling/scale")}
+          onClick={() => navigate("/dashboard")}
           className="w-full !h-full border !bg-black !text-white !py-4 !text-lg font-semibold"
         >
-          Next{" "}
+          Finish Session{" "}
         </Button>
         <Button
-          onClick={() => navigate("/Journaling/results")}
+          onClick={() => navigate("/Journaling/situation")}
           className="w-full !h-full border !bg-[#3D4260] !text-white !py-4 !text-lg font-semibold"
         >
-          Next{" "}
+          Start New Session{" "}
         </Button>
       </div>
     </div>

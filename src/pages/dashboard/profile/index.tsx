@@ -94,6 +94,105 @@ const Profile = () => {
             </div>
           </div>
         </div>
+
+        <div className="flex flex-col gap-4 bg-[#F1F1F1] border px-4 py-3.5 !rounded-4xl">
+          <div className="flex justify-between items-center">
+            <div>
+              <h1 className="text-xl font-extrabold gray-100">
+                Your remadi plan,
+              </h1>
+              <p className="text-sm font-semibold">
+                Get the best out of your professional guidance over chat that is
+                accessible, <br />
+                affordable, and effective.
+              </p>
+            </div>{" "}
+            <div>
+              <Button
+                onClick={() => navigate("/Journaling/situation")}
+                className="!px-5 !py-5 border !bg-[#121619] !text-white !py-4 !text-sm font-extrabold"
+              >
+                Change Plan{" "}
+              </Button>
+            </div>
+          </div>
+          <div className="flex justify-between items-center">
+            <div>
+              <div className="flex">
+                <div className="flex flex-col gap-2 w-50">
+                  <div className="flex items-center gap-2.5">
+                    <Icon
+                      icon="si:check-duotone"
+                      width="24"
+                      height="24"
+                      className="text-[#59DAB1]"
+                    />
+                    <p className="text-sm font-bold gray-100">12+ Sessions</p>
+                  </div>
+                  <div className="flex items-center gap-2.5">
+                    <Icon
+                      icon="si:check-duotone"
+                      width="24"
+                      height="24"
+                      className="text-[#59DAB1]"
+                    />
+                    <p className="text-sm font-bold gray-100">Venting Chat</p>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-2 w-60">
+                  <div className="flex items-center gap-2.5">
+                    <Icon
+                      icon="si:check-duotone"
+                      width="24"
+                      height="24"
+                      className="text-[#59DAB1]"
+                    />
+                    <p className="text-sm font-bold gray-100">
+                      Unlimited REMaDI content
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-2.5">
+                    <Icon
+                      icon="si:check-duotone"
+                      width="24"
+                      height="24"
+                      className="text-[#59DAB1]"
+                    />
+                    <p className="text-sm font-bold gray-100">Remadi Journal</p>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-2 w-50">
+                  <div className="flex items-center gap-2.5">
+                    <Icon
+                      icon="si:check-duotone"
+                      width="24"
+                      height="24"
+                      className="text-[#59DAB1]"
+                    />
+                    <p className="text-sm font-bold gray-100">
+                      Nuanced Matching
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-2.5">
+                    <Icon
+                      icon="si:check-duotone"
+                      width="24"
+                      height="24"
+                      className="text-[#59DAB1]"
+                    />
+                    <p className="text-sm font-bold gray-100">
+                      Verified Experts
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h1 className="text-4xl font-bold text-[#3D4260]">$4.99</h1>
+              <h1 className="text-xl font-bold text-[#3D4260]">/month</h1>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

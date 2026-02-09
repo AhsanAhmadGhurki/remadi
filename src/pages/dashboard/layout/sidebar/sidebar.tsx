@@ -77,7 +77,7 @@ const Sidebar = () => {
         <div className="flex flex-col gap-10 mb-11">
           {/* Help */}
           <Link
-            to="/Dashboard/help"
+            to="/Dashboard"
             className="flex items-center gap-3.5 mx-4 ms-16 text-gray-500 font-semibold hover:text-[#A0A7F9] transition w-fit"
           >
             <Icon icon="mdi:help-circle-outline" width="24" height="24" />
@@ -86,7 +86,7 @@ const Sidebar = () => {
 
           {/* Dark Mode */}
           <Link
-            to="/Dashboard/help"
+            to="/Dashboard"
             className="flex items-center gap-3.5 mx-4 ms-16 text-gray-500 font-semibold hover:text-[#A0A7F9] transition w-fit"
           >
             <Icon icon="mdi:weather-night" width="24" height="24" />
@@ -95,7 +95,7 @@ const Sidebar = () => {
 
           {/* Settings */}
           <Link
-            to="/Dashboard/settings"
+            to="/Dashboard/profile"
             className="flex items-center gap-3.5 mx-4 ms-16 text-gray-500 font-semibold hover:text-[#A0A7F9] transition w-fit"
           >
             <Icon icon="mdi:cog-outline" width="24" height="24" />
